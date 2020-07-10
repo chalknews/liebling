@@ -70,6 +70,8 @@ into the {body} of the default.hbs template --}}
             </div>
           </div>
         </div>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=1251893451586868&autoLogAppEvents=1" nonce="gEMiPCiw"></script>
         {{!-- Email subscribe form at the bottom of the page --}}
         {{#if @labs.subscribers}}
           <section class="m-subscribe-section">
@@ -189,6 +191,7 @@ into the {body} of the default.hbs template --}}
           </section>
         --}}
       {{/post}}
+      <div class="fb-comments" data-href="https://chalknews.in/hello-world/" data-numposts="5" data-width=""></div>
       {{!-- Related posts --}}
       {{#get "posts" limit="3" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags,authors" as |related|}}
         <section class="m-recommended">
