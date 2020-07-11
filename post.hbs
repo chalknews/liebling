@@ -48,9 +48,11 @@ into the {body} of the default.hbs template --}}
                   {{tags separator="&nbsp;|&nbsp;" prefix="Tagged in:&nbsp;" limit="3"}}
                   {{!-- <span class="m-heading__meta__divider" aria-hidden="true"><br></span> --}}
                 {{/if}} 
-                <br> 
+              </div>
+              <div class="m-heading__meta">
                 Published: &nbsp; <span class="m-heading__meta__time">{{date published_at format="MMMM Do YYYY, h:mm a"}}</span>
-                <br>
+              </div>
+              <div class="m-heading__meta">
                 Authored By: &nbsp; <a href="{{primary_author.url}}" class="m-author__name">{{primary_author.name}}</a>
               </div>
             </header>
