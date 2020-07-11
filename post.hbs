@@ -126,9 +126,9 @@ into the {body} of the default.hbs template --}}
             </div>
           </section>
         {{/if}}
-        <section class="m-author">
+        {{!-- <section class="m-author">
           <div class="m-author__content">
-            {{!-- <div class="m-author__picture">
+            <div class="m-author__picture">
               <a href="{{primary_author.url}}" class="m-author-picture" aria-label="{{primary_author.name}}">
                 {{#if primary_author.profile_image}}
                   <div style="background-image: url({{primary_author.profile_image}});"></div>
@@ -136,7 +136,7 @@ into the {body} of the default.hbs template --}}
                   <div style="background-image: url({{asset "images/default-avatar-square-small.jpg"}});"></div>
                 {{/if}}
               </a>
-            </div> --}}
+            </div>
             <div class="m-author__info">
               <h4 class="m-author__name">
                 <a href="{{primary_author.url}}">{{primary_author.name}}</a>
@@ -174,7 +174,7 @@ into the {body} of the default.hbs template --}}
               </ul>
             </div>
           </div>
-        </section>
+        </section> --}}
         {{!-- If you want to embed comments, this is a good place to do it! --}}
         
           <section class="m-comments">
