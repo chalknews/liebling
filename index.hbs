@@ -72,9 +72,9 @@ into the {body} of the default.hbs template --}}
                               <div style="background-image: url({{img_url primary_author.profile_image size="xs"}});"></div>
                           </a>
                         {{/if}}
-                          {{#if primary_tag}}
-                            Tag: <a href="{{primary_tag.url}}" class="m-article-card__tag">{{primary_tag.name}}</a>
-                          {{/if}}
+                          {{!-- {{#if primary_tag}}
+                          <a href="{{primary_tag.url}}" class="m-article-card__tag">{{primary_tag.name}}</a>
+                          {{/if}} --}}
                         </div>
                         <div class="m-featured-article__ribbon">
                           <span class="icon-star"></span>
