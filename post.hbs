@@ -44,7 +44,7 @@ into the {body} of the default.hbs template --}}
                 Tag: <a href="{{primary_tag.url}}" class="m-heading__meta__tag">{{primary_tag.name}}</a>
                   <span class="m-heading__meta__divider" aria-hidden="true">&bull;</span>
                 {{/if}}
-                Published: <span class="m-heading__meta__time">{{date format="MMMM Do YYYY, h:mm:ss a" published_at}}</span>
+                Published: <span class="m-heading__meta__time">{{date published_at format="MMMM Do YYYY, h:mm:ss a"}}</span>
               </div>
             </header>
             <div class="pos-relative js-post-content">
