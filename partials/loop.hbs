@@ -18,7 +18,7 @@
         {{#if primary_author.profile_image}}
           <div style="background-image: url({{img_url primary_author.profile_image size="xs"}});"></div>
         {{else}}
-          <div style="background-image: url({{asset "images/default-avatar-square-small.jpg"}});"></div>
+          <div class="m-article-card__info">By: {{primary_author.name}}</div>
         {{/if}}
       </a>
       {{#if featured}}
