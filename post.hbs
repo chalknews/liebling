@@ -40,10 +40,14 @@ into the {body} of the default.hbs template --}}
             <header class="m-heading">
               <h1 class="m-heading__title in-post">{{title}}</h1>
               <div class="m-heading__meta">
-                {{#if primary_tag}}
+                {{!-- {{#if primary_tag}}
                 Tag: &nbsp; <a href="{{primary_tag.url}}" class="m-heading__meta__tag">{{primary_tag.name}}</a>
                   <span class="m-heading__meta__divider" aria-hidden="true">&bull;</span>
-                {{/if}}
+                {{/if}} --}}
+                {{#if tags}}
+                  {{tags separator=", " prefix="Tagged in: " limit="3"}}
+                  <span class="m-heading__meta__divider" aria-hidden="true">&bull;</span>
+                {{/if}}  
                 Published: &nbsp; <span class="m-heading__meta__time">{{date published_at format="MMMM Do YYYY, h:mm a"}}</span>
               </div>
             </header>
