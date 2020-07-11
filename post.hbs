@@ -41,10 +41,10 @@ into the {body} of the default.hbs template --}}
               <h1 class="m-heading__title in-post">{{title}}</h1>
               <div class="m-heading__meta">
                 {{#if primary_tag}}
-                Tag: <a href="{{primary_tag.url}}" class="m-heading__meta__tag">{{primary_tag.name}}</a>
+                Tag: &nbsp; <a href="{{primary_tag.url}}" class="m-heading__meta__tag">{{primary_tag.name}}</a>
                   <span class="m-heading__meta__divider" aria-hidden="true">&bull;</span>
                 {{/if}}
-                Published: <span class="m-heading__meta__time">{{date published_at format="MMMM Do YYYY, h:mm:ss a"}}</span>
+                Published: &nbsp; <span class="m-heading__meta__time">{{date published_at format="MMMM Do YYYY, h:mm a"}}</span>
               </div>
             </header>
             <div class="pos-relative js-post-content">
