@@ -46,9 +46,12 @@ into the {body} of the default.hbs template --}}
                 {{/if}} --}}
                 {{#if tags}}
                   {{tags separator="&nbsp;|&nbsp;" prefix="Tagged in:&nbsp;" limit="3"}}
-                  <span class="m-heading__meta__divider" aria-hidden="true"><br></span>
-                {{/if}}  
+                  {{!-- <span class="m-heading__meta__divider" aria-hidden="true"><br></span> --}}
+                {{/if}} 
+                <br> 
                 Published: &nbsp; <span class="m-heading__meta__time">{{date published_at format="MMMM Do YYYY, h:mm a"}}</span>
+                <br>
+                Authored By: &nbsp; <a href="{{primary_author.url}}" class="m-author__name">{{primary_author.name}}</a>
               </div>
             </header>
             <div class="pos-relative js-post-content">
@@ -134,7 +137,6 @@ into the {body} of the default.hbs template --}}
             </div> --}}
             <div class="m-author__info">
               <h4 class="m-author__name">
-                Authored By: &nbsp;
                 <a href="{{primary_author.url}}">{{primary_author.name}}</a>
               </h4>
               {{#has author="count:>1"}}
