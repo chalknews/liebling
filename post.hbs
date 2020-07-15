@@ -51,10 +51,13 @@ into the {body} of the default.hbs template --}}
                 {{/if}} 
               </div>
               <div class="m-heading__meta">
-                Published: &nbsp; <span class="m-heading__meta__time">{{date published_at format="MMMM Do YYYY, h:mm a"}}</span>
+                Authored By: &nbsp;<a href="{{primary_author.url}}" class="">{{primary_author.name}}</a>
               </div>
               <div class="m-heading__meta">
-                Authored By: &nbsp; <a href="{{primary_author.url}}" class="">{{primary_author.name}}</a>
+                Published: &nbsp;<span class="m-heading__meta__time">{{date published_at format="MMMM Do YYYY, h:mm a"}}</span>
+              </div>
+              <div class="m-heading__meta">
+                Last Updated: &nbsp;<span class="m-heading__meta__time">{{date updated_at format="MMMM Do YYYY, h:mm a"}}</span>
               </div>
             </header>
             <div class="pos-relative js-post-content">
