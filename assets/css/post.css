@@ -1163,9 +1163,9 @@
 }
 
 .article-tags a {
-    background: var(--toggle-darkmode-button-color);
+    background: rgba(0, 0, 0, 0.08);
     border-radius: 3px;
-    color: var(--primary-foreground-color);
+    color: rgba(0, 0, 0, 0.6);
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
