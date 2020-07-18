@@ -39,16 +39,16 @@ into the {body} of the default.hbs template --}}
             class="l-post-content {{#if @labs.subscribers}}has-subscribe-form{{/if}} {{#if @labs.members}}has-subscribe-form{{/if}} js-progress-content">
             <header class="m-heading">
               <h1 class="m-heading__title in-post">{{title}}</h1>
-              <div class="m-heading__meta">
+              {{!-- <div class="m-heading__meta"> --}}
                 {{!-- {{#if primary_tag}}
                 Tag: &nbsp; <a href="{{primary_tag.url}}" class="m-heading__meta__tag">{{primary_tag.name}}</a>
                   <span class="m-heading__meta__divider" aria-hidden="true">&bull;</span>
                 {{/if}} --}}
-                {{#if tags}}
-                  {{tags separator="&nbsp;|&nbsp;" prefix="Tagged in:&nbsp;" limit="4"}}
+                {{!-- {{#if tags}} --}}
+                  {{!-- {{tags separator="&nbsp;|&nbsp;" prefix="Tagged in:&nbsp;" limit="4"}} --}}
                   {{!-- <span class="m-heading__meta__divider" aria-hidden="true"><br></span> --}}
-                {{/if}} 
-              </div>
+                {{!-- {{/if}} 
+              </div> --}}
               <div class="m-heading__meta">
                 Authored By: &nbsp;<a href="{{primary_author.url}}" class="">{{primary_author.name}}</a>
               </div>
