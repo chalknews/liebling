@@ -88,7 +88,7 @@ into the {body} of the default.hbs template --}}
                   {{!-- Post All Tags (category) --}}
                   {{#if tags}}
                       <div class="article-tags">
-                          {{#foreach tags}}
+                          {{#foreach tags limit="4"}}
                               <a href="{{url absolute="true"}}" title="{{name}}">{{name}}</a>
                           {{/foreach}}
                       </div>
